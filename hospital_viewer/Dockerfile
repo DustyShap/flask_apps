@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER James Matsumura (jmatsumura@som.umaryland.edu)
+MAINTAINER James Matsumura (james.matsumura@gmail.com)
 
 # Install SQLite/pip3/git
 RUN apt-get update && apt-get install -y sqlite3 \

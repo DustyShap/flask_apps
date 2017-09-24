@@ -33,8 +33,7 @@ import sqlite3
 app = Flask(__name__) # setup the Fask app
 app.config.from_object(__name__) # load local conf and set defaults
 app.config.update(dict(
-    DATABASE=os.path.join(app.root_path, 'hospitals.db'),
-    HOST='0.0.0.0'
+    DATABASE=os.path.join(app.root_path, 'hospitals.db')
 ))
 app.config.from_envvar('CUSTOM_FLASK_CONF', silent=True) # can add custom conf if desired
 
@@ -192,4 +191,4 @@ def build_hospital_entry_from_sqlite(row):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
