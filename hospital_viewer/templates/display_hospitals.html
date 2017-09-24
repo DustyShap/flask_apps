@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Hospitals</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        <div id="hospital_content">
+            <table class="resource_table">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Address</th>
+                </tr>
+                {% for hospital in hospital_list %}
+                <tr>
+                    <td>{{ hospital.id }}</td>
+                    <td>{{ hospital.name }}</td>
+                    <td>{{ hospital.city }}</td>
+                    <td>{{ hospital.state }}</td>
+                    <td>{{ hospital.address }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Northwestern Memorial Hospital",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "251 E Huron St"
+  },
+  {
+    "id": 2,
+    "name": "Advocate Illinois Masonic Medical Center",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "836 W Wellington Ave"
+  },
+  {
+    "id": 3,
+    "name": "University of Illinois Medical Center",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "1740 W Taylor St"
+  },
+  {
+    "id": 4,
+    "name": "OSF Saint Anthony Medical Center",
+    "city": "Rockford",
+    "state": "IL",
+    "address": "5666 E State St"
+  },
+  {
+    "id": 5,
+    "name": "Swedish American Hospital",
+    "city": "Rockford",
+    "state": "IL",
+    "address": "1401 E State St"
+  }
+]
