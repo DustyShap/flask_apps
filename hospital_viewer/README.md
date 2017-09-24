@@ -22,6 +22,15 @@ A simple RESTful Python Flask app to view hospital records following [this forma
 5. Verify the application/database are properly up and running.
   * `tests/test_app.py`
 
+### Docker
+
+1. Use the Dockerfile at the root of the repository to build the image OR use docker pull (pulls from [this](https://hub.docker.com/r/jmatsumura/hospital-viewer/) Docker image).
+  * `docker build -t jmatsumura/hospital-viewer .`
+  * `docker pull jmatsumura/hospital-viewer`
+2. Run the image and map your chosen port (using 8888 here).
+  * `docker run -d -p 8888:5000 jmatsumura/hospital-viewer`
+3. Can visit the site at a location given the previous port like `localhost:8888`.
+
 ## Usage
 
 Runs by default on port 5000 and hosts on 0.0.0.0 so can be reached by any of:
