@@ -3,7 +3,10 @@
 A simple RESTful Python Flask app to view hospital records following [this format](https://raw.githubusercontent.com/incompass/coding-challenge-assets/master/hospitals.json).
 
 * [Setup](https://github.com/jmatsumura/flask_apps/tree/master/hospital_viewer#setup)
+  * [Ubuntu](https://github.com/jmatsumura/flask_apps/tree/master/hospital_viewer#ubuntu-tested-with-ubuntu-1604--python-35)
+  * [Docker](https://github.com/jmatsumura/flask_apps/tree/master/hospital_viewer#docker)
 * [Usage](https://github.com/jmatsumura/flask_apps/tree/master/hospital_viewer#usage)
+  * [Endpoints](https://github.com/jmatsumura/flask_apps/tree/master/hospital_viewer#endpoints)
 
 ## Setup
 
