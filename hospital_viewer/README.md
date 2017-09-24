@@ -24,19 +24,17 @@ A simple RESTful Python Flask app to view hospital records following [this forma
 
 ## Usage
 
-Runs by default on port 5000 and hosting 0.0.0.0 so can be reached by any of:
+Runs by default on port 5000 and hosts on 0.0.0.0 so can be reached by any of:
 * `localhost:5000`
 * `127.0.0.1:5000`
 * `0.0.0.0:5000`
 
 ### Endpoints:
 * `~/`
-  * Root of the site and will render all the current hospital entries stored in the database. Uses the GET route of `~/hospitals` to obtain this information.
+  * Root of the site which will render all the current hospital entries stored in the database. Uses the GET route of `~/hospitals` to obtain this information.
 
 * `~/hospitals`
-  * Can be used via GET without any following value to pull all hospitals in JSON format. One can also access individual hospitals by ID by following this endpoint with the desired ID (e.g. `~/hospitals/1`). 
-  
-One can add new hospital entries through a POST request on the `~/hospitals` endpoint providing a JSON list which follows the structure of https://raw.githubusercontent.com/incompass/coding-challenge-assets/master/hospitals.json. For example, one can use a command such as `curl` to add entries:
+  * Can be used via GET without any following value to pull all hospitals in JSON format. One can also access an individual hospital's data by ID by following this endpoint with the desired ID (e.g. `~/hospitals/1`). This endpoint also allows POST requests. One can add new hospital entries through a POST request on the `~/hospitals` endpoint providing a JSON list which follows the structure of https://raw.githubusercontent.com/incompass/coding-challenge-assets/master/hospitals.json. For example, one can use a command such as `curl` to add entries:
 
 `curl -H "Content-Type: application/json" -X POST -d '[{"hospital":"data","not":"valid"}]' http://localhost:5000/hospitals`
 
